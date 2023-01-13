@@ -3,7 +3,7 @@ Make accurate multi-factor forex prediction using multiple factors
 5 day prediction          
 ## Data Gathering
 Gather the neccesary data in order to train the project
-1 year worth of data will be used in order to train our model
+1 year worth of data will be used in order to train our models
 ### Sociological Indicators (LSTM)
 **News**             
 1.Political        
