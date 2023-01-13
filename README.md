@@ -8,7 +8,8 @@ Gather the neccesary data in order to train the project
 **News**             
 1.Political        
 2.Sociological              
-3.Economical News     
+3.Economical News   
+      
 **Time Periods**     
 1/2/3/5/10 day    
 **Both EUR/USA**    
