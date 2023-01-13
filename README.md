@@ -11,7 +11,7 @@ Gather the neccesary data in order to train the project
 3.Economical News 
 **Time Periods**    
 1/2/3/5/10 day      
-Use of https://newscatcherapi.com/ api
+Use of https://newscatcherapi.com/api
 ### Short Term Economic Indicators(ARIMA)
 1.Moving Averages     
 2.Relative Strength Index (RSI)
