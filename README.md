@@ -5,7 +5,7 @@ Make accurate multi-factor forex prediction using multiple factors
 Gather the neccesary data in order to train the project
 1 year worth of data will be used in order to train our model
 ### Sociological Indicators
-**News**
+**News**             
 1.Political        
 2.Sociological              
 3.Economical News             
