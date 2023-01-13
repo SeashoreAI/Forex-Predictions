@@ -17,7 +17,8 @@ Use of https://newscatcherapi.com/api
 2.Relative Strength Index (RSI)      
 3.Stochastics          
 4.Average Directional Movement (ADX)          
-5.Bollinger Bands                
+5.Bollinger Bands               
+
 **Time Periods**    
 15min/30min/2hour/1day/3days/7days/14days   
 ### Short Term Stock Indicators (LSTM)
