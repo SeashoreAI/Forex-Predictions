@@ -41,6 +41,6 @@ Use of https://newscatcherapi.com/api
 ## Data Combination
 All the data combined from the 2 models will end up in a final ARIMA model
 Combinations:     
-(1) Short Term Economic Indicators + Sociological Indicators -> ARIMA
-(2) Short Term Stock Indicators + Sociological Indicators -> ARIMA
+(1) Short Term Economic Indicators + Sociological Indicators -> ARIMA                  
+(2) Short Term Stock Indicators + Sociological Indicators -> ARIMA                 
 (1)+(2) = Final ARIMA model
