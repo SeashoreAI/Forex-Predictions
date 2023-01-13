@@ -32,7 +32,7 @@ Use of https://newscatcherapi.com/api
   Relative Strength Index (RSI)  
   Stochastics 
   Average Directional Movement (ADX) 
-  Bollinger Bands  
+  Bollinger Bands     
 **Time Periods**
 15min/30min/2hour/1day/3days/7days/14days   
 ## Data Combination
