@@ -35,4 +35,4 @@ Use of https://newscatcherapi.com/ api
   Bollinger Bands  
 15min/30min/2hour/1day/3days/7days/14days   
 ## Data Combination
-ALl the data combined from the 3 models will end up in a final ARIMA model
+All the data combined from the 3 models will end up in a final ARIMA model
