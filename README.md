@@ -33,6 +33,7 @@ Use of https://newscatcherapi.com/api
   Stochastics 
   Average Directional Movement (ADX) 
   Bollinger Bands  
+**Time Periods**
 15min/30min/2hour/1day/3days/7days/14days   
 ## Data Combination
 All the data combined from the 3 models will end up in a final ARIMA model
