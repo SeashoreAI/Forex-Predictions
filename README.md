@@ -14,10 +14,10 @@ Gather the neccesary data in order to train the project
 Use of https://newscatcherapi.com/api
 ### Short Term Economic Indicators(ARIMA)
 1.Moving Averages     
-2.Relative Strength Index (RSI)
-3.Stochastics 
-4.Average Directional Movement (ADX) 
-5.Bollinger Bands         
+2.Relative Strength Index (RSI)      
+3.Stochastics          
+4.Average Directional Movement (ADX)          
+5.Bollinger Bands                
 **Time Periods**    
 15min/30min/2hour/1day/3days/7days/14days   
 ### Short Term Stock Indicators (LSTM)
