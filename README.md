@@ -21,15 +21,15 @@ Use of https://newscatcherapi.com/api
 **Time Periods**    
 15min/30min/2hour/1day/3days/7days/14days   
 ### Short Term Stock Indicators (LSTM)
-1. S/P 500
-  Moving Averages     
-  Relative Strength Index (RSI)
-  Stochastics 
-  Average Directional Movement (ADX) 
-  Bollinger Bands   
-2. FTSEurofirst 300 Index
-  Moving Averages     
-  Relative Strength Index (RSI)
+1. S/P 500     
+  Moving Averages    
+  Relative Strength Index (RSI)        
+  Stochastics          
+  Average Directional Movement (ADX)           
+  Bollinger Bands          
+2. FTSEurofirst 300 Index     
+  Moving Averages          
+  Relative Strength Index (RSI)  
   Stochastics 
   Average Directional Movement (ADX) 
   Bollinger Bands  
