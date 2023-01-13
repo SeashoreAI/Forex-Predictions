@@ -4,7 +4,7 @@ Make accurate multi-factor forex prediction using multiple factors
 ## Data Gathering
 Gather the neccesary data in order to train the project
 1 year worth of data will be used in order to train our models
-### Sociological Indicators (LSTM)
+### Sociological Indicators (ARIMA)
 **News**             
 1.Political        
 2.Sociological              
@@ -22,7 +22,7 @@ Use of https://newscatcherapi.com/api
 
 **Time Periods**    
 15min/30min/2hour/1day/3days/7days/14days   
-### Short Term Stock Indicators (LSTM)
+### Short Term Stock Indicators (ARIMA)
 1. S/P 500     
   Moving Averages    
   Relative Strength Index (RSI)        
@@ -39,4 +39,8 @@ Use of https://newscatcherapi.com/api
 **Time Periods**
 15min/30min/2hour/1day/3days/7days/14days   
 ## Data Combination
-All the data combined from the 3 models will end up in a final ARIMA model
+All the data combined from the 2 models will end up in a final ARIMA model
+Combinations:     
+(1) Short Term Economic Indicators + Sociological Indicators -> ARIMA
+(2) Short Term Stock Indicators + Sociological Indicators -> ARIMA
+(1)+(2) = Final ARIMA model
