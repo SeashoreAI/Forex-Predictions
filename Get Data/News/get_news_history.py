@@ -14,14 +14,14 @@ class Blocks:
 
         # The parameters for the API request
         params = {
-            "q": "Dollar" or "Economy" or "Politics" or "Stock Market",
+            "q": "Dollar" or "Economy" or "Politics" or "Stock Market" or "Joe Bider" or "War" or ("Shops" and "America") or ("Trade" and "America"),
             "lang": "en",
             "sort_by": "relevancy",
             "from": (datetime.datetime.now() - datetime.timedelta(days=10)).strftime("%Y-%m-%d"),
             "to": datetime.datetime.now().strftime("%Y-%m-%d"),
             "page": 1,
             "to_rank": 2000,
-            "page_size": 10,
+            "page_size": 50,
         }
         headers = {"x-api-key": api_key}
         # Send the API request
