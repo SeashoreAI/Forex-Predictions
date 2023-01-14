@@ -36,7 +36,12 @@ Use of https://newscatcherapi.com/api
   Stochastics 
   Average Directional Movement (ADX) 
   Bollinger Bands     
-
+3.Gold
+  Moving Averages          
+  Relative Strength Index (RSI)  
+  Stochastics 
+  Average Directional Movement (ADX) 
+  Bollinger Bands   
 **Time Periods**
 15min/30min/2hour/1day/3days/7days/14days   
 ## Data Combination
