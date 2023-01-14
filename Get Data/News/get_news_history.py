@@ -8,6 +8,8 @@ class Blocks:
     def search(self,torank,days_back):
         self.torank = torank
         self.days_back = days_back
+        self.sum_socre = 0
+
         # Your API key
         api_key = os.environ["API_KEY"]
         # The API endpoint for searching news
@@ -17,7 +19,7 @@ class Blocks:
         params = {
             "q": "Dollar" or "Economy" or "Politics" or "Stock Market" or "Joe Bider" or "War" or ("Shops" and "America") or ("Trade" and "America"),
             "lang": "en",
-            "sort_by": "relevancy",
+            "sort_by": "date",
             "from": (datetime.datetime.now() - datetime.timedelta(days=self.days_back)).strftime("%Y-%m-%d"),
             "to": datetime.datetime.now().strftime("%Y-%m-%d"),
             "page": 1,
@@ -44,9 +46,14 @@ class Blocks:
             sentiment = TextBlob(summary).sentiment.polarity
             # Scale the score from -1 to 1 to 1 to 100
             score = (sentiment + 1) * 50
+            self.sum_socre += score
             # Append the results to the dataframe
             df = df.append({"date":date,"title":title,"score":score}, ignore_index=True)
+        final_day_sc = (self.sum_socre/len(data["articles"]))
+        return final_day_sc
         # Save the dataframe to an excel file
+'''
         with pd.ExcelWriter('USA_economy_headlines.xlsx',mode='a') as writer:  
             df.to_excel(writer,index=False,)
         print("The data has been saved to an excel file")
+'''
