@@ -5,8 +5,9 @@ import pandas as pd
 from textblob import TextBlob
 import os
 class Blocks:
-    def search(self,term):
-        self.term = term
+    def search(self,torank,days_back):
+        self.torank = torank
+        self.days_back = days_back
         # Your API key
         api_key = os.environ["API_KEY"]
         # The API endpoint for searching news
@@ -17,10 +18,10 @@ class Blocks:
             "q": "Dollar" or "Economy" or "Politics" or "Stock Market" or "Joe Bider" or "War" or ("Shops" and "America") or ("Trade" and "America"),
             "lang": "en",
             "sort_by": "relevancy",
-            "from": (datetime.datetime.now() - datetime.timedelta(days=10)).strftime("%Y-%m-%d"),
+            "from": (datetime.datetime.now() - datetime.timedelta(days=self.days_back)).strftime("%Y-%m-%d"),
             "to": datetime.datetime.now().strftime("%Y-%m-%d"),
             "page": 1,
-            "to_rank": 2000,
+            "to_rank": self.torank,
             "page_size": 50,
         }
         headers = {"x-api-key": api_key}
@@ -47,5 +48,5 @@ class Blocks:
             df = df.append({"date":date,"title":title,"score":score}, ignore_index=True)
         # Save the dataframe to an excel file
         with pd.ExcelWriter('USA_economy_headlines.xlsx',mode='a') as writer:  
-            df.to_excel(writer)
+            df.to_excel(writer,index=False,)
         print("The data has been saved to an excel file")
