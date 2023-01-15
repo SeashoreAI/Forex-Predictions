@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Get historical data for EUR/USD
-eur_usd_data = yf.download("EUR=X", start="2010-01-01", end="2021-01-01")
+eur_usd_data = yf.download("EUR=X", interval = "5m", start="2010-01-01", end="2010-01-07")
 
 # Calculate the moving average
 eur_usd_data['MA'] = eur_usd_data['Close'].rolling(window=14).mean()
